@@ -68,7 +68,7 @@ impl GameState {
     if guesses_index.is_some()  {
        
         // Check if it matches a previous guess from the player
-        let winner = self.players.()[guesses_index.unwrap()];
+        let winner = self.players()[guesses_index.unwrap()];
         if winner == player {
         response = vec![b'r'; 5];
             return response;
